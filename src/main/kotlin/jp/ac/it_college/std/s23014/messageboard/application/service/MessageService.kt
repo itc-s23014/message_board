@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s23014.messageboard.security
+package jp.ac.it_college.std.s23014.messageboard.application.service
 
 
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Messages
@@ -34,7 +34,7 @@ class MessageService(private val messageRepository: MessageRepository) {
 
     fun updateMessage(id: Long, messages: String, userId: Long): Messages {
 
-        val existingMessage = messageRepository.getMessageById(id) 
+        val existingMessage = messageRepository.getMessageById(id)
             ?: throw IllegalArgumentException("Message not found with id: $id")
 
         existingMessage.message = messages

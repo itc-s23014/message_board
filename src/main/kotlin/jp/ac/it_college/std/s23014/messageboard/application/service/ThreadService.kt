@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s23014.messageboard.security
+package jp.ac.it_college.std.s23014.messageboard.application.service
 
 
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Threads
