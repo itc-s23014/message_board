@@ -1,5 +1,6 @@
 package jp.ac.it_college.std.s23014.messageboard.presentation.from
 
+import kotlinx.serialization.Contextual
 import java.time.LocalDateTime
 import kotlinx.serialization.Serializable
 
@@ -10,10 +11,9 @@ data class GetThreadListResponse(val threadsList: List<ThreadInfo>)
 data class ThreadInfo(
     val id: Long,
     val title: String,
-    val createdAt: LocalDateTime
-) {
-    constructor(model: Thread) : this(model.id, model.title, model.createdAt)
-}
+    @Contextual val createdAt: LocalDateTime
+)
+
 
 @Serializable
 data class PostThreadRequest(
@@ -41,5 +41,5 @@ data class ThreadUpdateResponse(
 data class ThreadDeleteResponse(
     val id: Long,
     val title: String,
-    val updatedAt: LocalDateTime,
+   @Contextual val updatedAt: LocalDateTime,
 )

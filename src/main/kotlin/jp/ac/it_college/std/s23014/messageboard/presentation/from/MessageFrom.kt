@@ -1,6 +1,4 @@
 package jp.ac.it_college.std.s23014.messageboard.presentation.from
-
-
 import jp.ac.it_college.std.s23014.messageboard.domain.model.MessageWithThreads
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Messages
 import kotlinx.datetime.LocalDateTime

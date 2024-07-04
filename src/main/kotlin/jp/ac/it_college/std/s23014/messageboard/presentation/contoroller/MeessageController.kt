@@ -23,7 +23,7 @@ class MessageController(
 ) {
     @GetMapping("/list/thread/{thread_id}")
     fun getList(@PathVariable(value = "thread_id") threadId: Long): GetMessageListResponse {
-        val thread = threadService.getDetails(threadId)
+        val thread = threadService.getDetailsById(threadId)
         val messages = messageService.getListByThread(threadId)
 
         if (thread == null) {
