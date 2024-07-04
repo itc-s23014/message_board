@@ -1,6 +1,4 @@
 package jp.ac.it_college.std.s23014.messageboard.infrastructure.database.dao
-
-
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Threads
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass

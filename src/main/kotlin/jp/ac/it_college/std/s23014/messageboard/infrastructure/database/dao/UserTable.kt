@@ -3,7 +3,7 @@ package jp.ac.it_college.std.s23014.messageboard.infrastructure.database.dao
 import org.jetbrains.exposed.dao.id.LongIdTable
 
 object UserTable : LongIdTable("users") {
-    val viewName = varchar("view_name", 32)
-    val email = varchar("email", 256).uniqueIndex()
-    val password = varchar("password", 128)
+    var viewName = varchar("view_name", 32)
+    var email = varchar("email", 256).uniqueIndex()
+    var password = varchar("password", 128)
 }

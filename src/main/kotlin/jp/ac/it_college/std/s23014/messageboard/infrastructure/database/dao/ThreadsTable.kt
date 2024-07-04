@@ -1,5 +1,4 @@
 package jp.ac.it_college.std.s23014.messageboard.infrastructure.database.dao
-
 import org.jetbrains.exposed.dao.id.LongIdTable
 import org.jetbrains.exposed.sql.kotlin.datetime.datetime
 
