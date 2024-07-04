@@ -16,20 +16,20 @@ class MessageService(private val messageRepository: MessageRepository) {
     }
 
 
-    //メッセージ投稿未完成
-//    fun newPost(threadId: Long, message: String, userId: Long): Messages {
-//
-//        val newMessage = Messages(
-//            id = 0L,
-//            threadId = threadId,
-//            userId = userId,
-//            postedAt = LocalDateTime.now(),
-//            message = messages
-//        )
-//
-//        // メッセージを保存
-//        return messageRepository.createMessage(newMessage)
-//    }
+    メッセージ投稿未完成
+    fun newPost(threadId: Long, message: String, userId: Long): Messages {
+        val now = java.time.LocalDateTime.now()
+        val  newThread = Messages(
+            threadId = threadId,
+            userId = userId,
+            message = message,
+
+        )
+        }
+
+         メッセージを保存
+        return messageRepository.createMessage(newMessage)
+    }
 
 
     fun updateMessage(id: Long, messages: String, userId: Long): Messages {
