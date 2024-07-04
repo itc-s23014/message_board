@@ -1,5 +1,4 @@
 package jp.ac.it_college.std.s23014.messageboard.domain.model
-
 import kotlinx.datetime.LocalDateTime
 
 
