@@ -1,5 +1,4 @@
 package jp.ac.it_college.std.s23014.messageboard.domain.repository
-
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Messages
 import java.util.*
 

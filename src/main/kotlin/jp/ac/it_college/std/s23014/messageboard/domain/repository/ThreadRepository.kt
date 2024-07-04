@@ -8,4 +8,6 @@ interface ThreadRepository {
         fun getAllThreads(): List<Threads>
         fun updateThread(thread: Threads): Threads
         fun deleteThread(id: Long)
+        fun getDetails(id: Long): Threads?
+//        fun save(threads: Threads): Threads
     }
