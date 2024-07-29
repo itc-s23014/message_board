@@ -1,4 +1,10 @@
+<<<<<<< HEAD:src/main/kotlin/jp/ac/it_college/std/s23014/messageboard/application/service/ThreadService.kt
 package jp.ac.it_college.std.s23014.messageboard.application.service
+=======
+package jp.ac.it_college.std.s23014.messageboard.security
+
+
+>>>>>>> parent of 08f068b (課題最終push):src/main/kotlin/jp/ac/it_college/std/s23014/messageboard/security/ThreadService.kt
 import jp.ac.it_college.std.s23014.messageboard.domain.model.Threads
 import jp.ac.it_college.std.s23014.messageboard.domain.repository.ThreadRepository
 import kotlinx.datetime.LocalDateTime
